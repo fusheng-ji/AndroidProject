@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1407232261.test0215.TimeActivity">
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="61dp"
+        android:layout_toStartOf="@+id/time"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/start"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/time"
+        android:text="暂停"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/start"
+        android:layout_centerVertical="true"
+        android:text="重置"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pause"
+        android:layout_alignTop="@+id/reset"
+        android:text="当前名次：" />
+
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@+id/reset"
+        android:layout_toEndOf="@+id/start" />
+
+</RelativeLayout>

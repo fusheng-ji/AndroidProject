@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1407232261.test0215.GameActivity">
+
+    <ImageView
+        android:id="@+id/upToDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/walk_up_down" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="↑"
+        android:layout_above="@+id/left"
+        android:layout_toEndOf="@+id/left" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textSize="30dp"
+        android:text="↓"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/up" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="←"
+        android:layout_above="@+id/down"
+        android:layout_toEndOf="@+id/upToDown"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="→"
+        android:layout_above="@+id/down"
+        android:layout_toEndOf="@+id/down" />
+</RelativeLayout>

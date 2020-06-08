@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test0215</string>
+    <string name="title_activity_flash_light">FlashLightActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+</resources>

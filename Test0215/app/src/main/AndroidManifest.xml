@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a1407232261.test0215">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    //震动权限
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //定位相关权限
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="嵇文博"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FullScreen">
+        //Theme.AppCompat.NoActionBar
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FlashLightActivity" />
+        <activity android:name=".WelcomActivity" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".TimeActivity" />
+        <activity android:name=".AlterDialogActivity" />
+        <activity android:name=".Welcom2Activity" />
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".ManagerActivity" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".RealWelcomeActivity" />
+        <activity android:name=".CountdownActivity" />
+        <activity android:name=".BallActivity" />
+        <activity android:name=".GameActivity" />
+        <activity android:name=".GestrueActivity" />
+        <activity android:name=".CheckGestrueActivity" />
+        <activity android:name=".CompassActivity" />
+        <activity android:name=".DanmuActivity"></activity>
+    </application>
+
+</manifest>
